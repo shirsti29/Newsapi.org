@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: grid;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 70px;
+    animation: fadeIn 2s ease;
+}
+
+.highlight-dot {
+    border-radius: 100%;
+    padding: 1px 25px;
+    background-color:maroon;
+    color: maroon;
+    font-size: 55px;
+}
+
+.line-primary, .line-secondary {
+    height: 2px;
+    background-color: black;
+}
+
+.line-primary {
+    margin-top: 20px;
+}
+.search-box {
+    padding: 10px 20px;
+    padding-left: 40px;
+    background: url(images/search.jpg) no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
+    border: 1px solid #51504e;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    /* width: 120px; */
+}
+
+.search-btn {
+    background-color: red;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+}
+
+.top-news-text {
+    color: darkred;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.news-grid {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.news-item {
+    flex-basis: 350px;
+    text-align: left;
+}
+
+.news-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    animation: slideIn 1s ease;
+}
+
+.news-title {
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    color: black;
+    transition: color 0.5s ease;
+}
+
+.news-description {
+    color: #333;
+}
+
+.read-more {
+    color: maroon;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.arrow {
+    color: maroon;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .news-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-item {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.line-end {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+.highlight-dot-end {
+    color: maroon;
+    background-color:maroon;
+    border-radius: 50%;
+    padding: 1px 6px;
+    font-size: 15px;
+   }
